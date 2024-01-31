@@ -1,8 +1,10 @@
 ## Conventions for git commits
+
 I use these conventions for commits on personal repos.
 
 
 ### Commit Messages
+
 > Inspiration: [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) & [Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)
 
 
@@ -23,14 +25,14 @@ Types **MUST** be one of the following:
 - **fix**: A bug fix.
 - **feat**: Adds a new feature.
 - **rm**: Removes a feature.
-- **refactor**: A code change that is not a feature or bug fix.
+- **refactor**: A code change that is not covered by another type.
 - **revert**: Reverts a previous commit, see section Revert.
 - **docs**: Changes to documentation only: `doc changes should be separate from code changes`.
 
 
 #### Scope:
 
-The scope describes the are of the code base effect, it is **NOT OPTIONAL**, **MUST** be less then 30 characters.
+The scope describes the area of the code base effected, it's **NOT OPTIONAL**, and **MUST** be less then 30 characters.
 
 In addition it **MUST NOT** be a reference to an issue or pr.
 
@@ -41,11 +43,11 @@ A description **MUST** immediately follow the colon and space after the type/sco
 
 In addition:
 
-1. **MUST NOT** capitalize the first letter.
+1. You **MUST NOT** capitalize the first letter.
 
-2. Where reasonable use the imperative, present tense: "change" not "changed" nor "changes".
+2. Use the imperative, present tense: "change" not "changed" nor "changes" (where reasonable).
 
-3. Where reasonable replace `and` with (`&` or `+`).
+3. Replace `and` with (`&` or `+`) also (where reasonable).
 
 
 #### Body:
@@ -67,6 +69,7 @@ If a commit will introduce a breaking change the type/scope **MUST** be followed
 
 
 #### Revert:
+
 If the commit reverts a previous commit, it **MUST** use the revert type, and **MUST** have a `REVERT: <hash>`, where hash is `&` separated list of commit SHAs that are being reverted.
 
 
