@@ -72,6 +72,9 @@ If a commit will introduce a breaking change the type/scope **MUST** be followed
 
 If the commit reverts a previous commit, it **MUST** use the revert type, and **MUST** have a `REVERT: <hash>`, where hash is `&` separated list of commit SHAs that are being reverted.
 
+#### Init:
+
+The initial commit message **MUST** be `init`.
 
 ### Examples:
 
